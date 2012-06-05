@@ -28,13 +28,10 @@
             ,  true                 //allow sleep
          );
          
-         var fixDef = new b2FixtureDef({
-           density: 10.0,
-           friction: 0.0,
-           restitution: 0.9
-         })
-
-         fixDef.friction = 0.0
+         var fixDef = new b2FixtureDef
+         fixDef.density = 10.0;
+         fixDef.friction = 0.0;
+         fixDef.restitution = 0.9;
          
          var bodyDef = new b2BodyDef;
          
